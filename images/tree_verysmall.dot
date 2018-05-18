@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Site EUI (kBtu/ft²) <= 15.95\nfriedman_mse = 1.0\nsamples = 6622\nvalue = 0.014", fillcolor="#e5813961"] ;
+1 [label="Weather Normalized Site Electricity Intensity (kWh/ft²) <= 3.85\nfriedman_mse = 0.769\nsamples = 181\nvalue = 0.481", fillcolor="#e5813965"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="(...)", fillcolor="#C0C0C0"] ;
+1 -> 2 ;
+13 [label="(...)", fillcolor="#C0C0C0"] ;
+1 -> 13 ;
+20 [label="Weather Normalized Site Electricity Intensity (kWh/ft²) <= 26.85\nfriedman_mse = 1.0\nsamples = 6441\nvalue = 0.001", fillcolor="#e5813961"] ;
+0 -> 20 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+21 [label="(...)", fillcolor="#C0C0C0"] ;
+20 -> 21 ;
+36 [label="(...)", fillcolor="#C0C0C0"] ;
+20 -> 36 ;
+}

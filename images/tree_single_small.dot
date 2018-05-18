@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Site EUI (kBtu/ft²) <= 88.45\nmse = 866.6\nsamples = 6622\nvalue = 60.477", fillcolor="#e581398f"] ;
+1 [label="Site EUI (kBtu/ft²) <= 68.95\nmse = 489.199\nsamples = 4326\nvalue = 74.265", fillcolor="#e58139b8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Weather Normalized Site Electricity Intensity (kWh/ft²) <= 5.75\nmse = 352.436\nsamples = 2261\nvalue = 83.966", fillcolor="#e58139d5"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+18 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 18 ;
+33 [label="Weather Normalized Site Electricity Intensity (kWh/ft²) <= 5.25\nmse = 423.098\nsamples = 2065\nvalue = 63.644", fillcolor="#e5813998"] ;
+1 -> 33 ;
+34 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 34 ;
+47 [label="(...)", fillcolor="#C0C0C0"] ;
+33 -> 47 ;
+62 [label="Site EUI (kBtu/ft²) <= 109.55\nmse = 544.662\nsamples = 2296\nvalue = 34.5", fillcolor="#e5813942"] ;
+0 -> 62 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+63 [label="Weather Normalized Site Electricity Intensity (kWh/ft²) <= 5.25\nmse = 452.214\nsamples = 1362\nvalue = 42.65", fillcolor="#e581395a"] ;
+62 -> 63 ;
+64 [label="(...)", fillcolor="#C0C0C0"] ;
+63 -> 64 ;
+79 [label="(...)", fillcolor="#C0C0C0"] ;
+63 -> 79 ;
+92 [label="Property Id <= 2269076.0\nmse = 441.355\nsamples = 934\nvalue = 22.615", fillcolor="#e581391f"] ;
+62 -> 92 ;
+93 [label="(...)", fillcolor="#C0C0C0"] ;
+92 -> 93 ;
+96 [label="(...)", fillcolor="#C0C0C0"] ;
+92 -> 96 ;
+}
